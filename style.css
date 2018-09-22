@@ -8,6 +8,30 @@ body {
   color: #2B3647;
 }
 
+button {
+  font-family: "josefin sans";
+  background-color: #495FFA;
+  border: none;
+  color: #fff;
+  padding: 10px 14px;
+  font-size: 16px;
+  border-radius: 4px;
+  margin-top: 38px;
+  box-shadow: 0px 2px 5px 0px rgba(94,115,255,0.66);
+}
+
+p {
+  line-height: 26px;
+}
+
+h1 {
+  line-height: 45px;
+}
+
+input {
+  font-family: "josefin sans", sans-serif;
+}
+
 .row {
   width: 960px;
   margin: auto;
@@ -15,10 +39,6 @@ body {
 
 .container {
   display: flex;
-}
-
-button {
-  font-family: "josefin sans";
 }
 
 /* Navbar */
@@ -37,7 +57,7 @@ button {
 }
 
 .navbar ul {
-  margin: 15px;
+  margin: 30px;
   display: flex;
   list-style: none;
 }
@@ -55,17 +75,7 @@ button {
 /* Landing Page */
 .landing {
   text-align: center;
-}
-
-.landing button {
-  background-color: #495FFA;
-  border: none;
-  color: #fff;
-  padding: 10px 14px;
-  font-size: 16px;
-  border-radius: 4px;
-  margin-top: 38px;
-  box-shadow: 0px 2px 5px 0px rgba(94,115,255,0.66);
+  height: 500px;
 }
 
 .landing p {
@@ -78,14 +88,13 @@ button {
 
 /* Product */
 .product {
-  margin-top: 80px;
-  padding: 40px 0px;
+  padding: 80px 0px;
   background-color: #F9FAFB;
   text-align: center;
 }
 
 .product .row > p {
-  margin: 10px;
+  margin: 30px;
   font-weight: 300;
 }
 
@@ -97,13 +106,93 @@ button {
   background-color: #fff;
   padding: 50px;
   margin: 10px;
-  /* align-self: center; */
   box-shadow: 0px 1px 26px 0px rgba(224,224,224,1);
   border-radius: 4px;
+}
+
+.single-product img {
+  height: 150px;
+  width: 150px;
+}
+
+.single-product p:nth-child(2) {
+  color: #495FFA;
+}
+
+.single-product p:nth-child(3) {
+  font-weight: bold;
+  margin: 10px 0px;
+}
+
+.single-product p:last-child {
+  font-weight: 300;
 }
 
 .subdiv-product {
   display: flex;
   align-content: center;
   justify-content: center;
+}
+
+/* Extra */
+.extra .row {
+  padding: 70px;
+  display: flex;
+}
+
+.extra p {
+  margin: 10px 0px;
+}
+
+.extra p:nth-child(3) {
+  font-weight: 300;
+}
+
+.extra img {
+  height: 300px;
+}
+
+/* Newsletter */
+.newsletter {
+  background-color: #8e8cff;
+  color: #fff;
+  padding: 50px;
+}
+
+.newsletter .row {
+  text-align: center;
+}
+
+.newsletter input {
+  padding: 10px 10px;
+  border-radius: 4px;
+  border: 2px solid #d3d3d3;
+  width: 50%;
+  font-size: 16px;
+}
+
+/* Footer */
+footer {
+  padding: 40px;
+  color: #fff;
+  background: #2B3647;
+}
+
+footer p {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.bottom-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.bottom-nav ul {
+  list-style: none;
+}
+
+.bottom-nav ul li {
+  margin: 10px 0px;
 }
