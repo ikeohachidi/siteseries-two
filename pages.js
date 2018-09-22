@@ -36,7 +36,7 @@ const Landing = Vue.component('Landing', {
 })
 
 const Product = Vue.component('Product', {
-  template:  `
+  template: `
     <div class="product container">
       <div class="row">
         <h3>Lorem ipsu dolor</h3>
@@ -117,6 +117,47 @@ const Newsletter = Vue.component('Newsletter', {
   `
 })
 
+const Footer = Vue.component('Footer', {
+  template: `
+    <footer class="footer container">
+      <div class="row">
+        <div class="bottom-nav">
+          <div>
+            <h1>Ikeoha Chidi &copy</h1>
+          </div>
+          <div>
+            <ul>
+              <li>item</li>
+              <li>item</li>
+              <li>item</li>
+              <li>item</li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li>item</li>
+              <li>item</li>
+              <li>item</li>
+              <li>item</li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li>item</li>
+              <li>item</li>
+              <li>item</li>
+              <li>item</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <p>Ikeoha Chidi &copy</p>
+        </div>
+      </div>
+    </footer>
+  `
+})
+
 let app = new Vue({
   el: '#app',
   components: {
@@ -124,6 +165,7 @@ let app = new Vue({
     Landing,
     Product,
     Extra,
-    Newsletter
+    Newsletter,
+    'Bottom': Footer
   }
 })
